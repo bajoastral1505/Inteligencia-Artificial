@@ -1,0 +1,115 @@
+**************************************************
+*************** CREATING SAMPLES *****************
+**************************************************
+Object : D:/OMES/OmesTutorials2020/OmesTutorials2020-master/9 DETECTOR DE OBJETOS con Haar Cascade
+Fixing file names in negative images folder.
+Fixing file names in positive images folder.
+Creating negative list D:/OMES/OmesTutorials2020/OmesTutorials2020-master/9 DETECTOR DE OBJETOS con Haar Cascade/neg.lst
+Creating positive list D:/OMES/OmesTutorials2020/OmesTutorials2020-master/9 DETECTOR DE OBJETOS con Haar Cascade/pos.lst
+Running : opencv_createsamples
+Info file name: D:\OMES\OmesTutorials2020\OmesTutorials2020-master\9 DETECTOR DE OBJETOS con Haar Cascade\pos.lst
+Img file name: (NULL)
+Vec file name: D:\OMES\OmesTutorials2020\OmesTutorials2020-master\9 DETECTOR DE OBJETOS con Haar Cascade\pos_samples.vec
+BG  file name: (NULL)
+Num: 6
+BG color: 0
+BG threshold: 80
+Invert: FALSE
+Max intensity deviation: 40
+Max x angle: 1.1
+Max y angle: 1.1
+Max z angle: 0.5
+Show samples: FALSE
+Width: 38
+Height: 46
+Max Scale: -1
+Create training samples from images collection...
+Done. Created 6 samples
+
+**************************************************
+************* TRAINING CLASSIFIER ****************
+**************************************************
+Running : opencv_traincascade
+PARAMETERS:
+cascadeDirName: D:\OMES\OmesTutorials2020\OmesTutorials2020-master\9 DETECTOR DE OBJETOS con Haar Cascade\classifier
+vecFileName: D:\OMES\OmesTutorials2020\OmesTutorials2020-master\9 DETECTOR DE OBJETOS con Haar Cascade\pos_samples.vec
+bgFileName: D:\OMES\OmesTutorials2020\OmesTutorials2020-master\9 DETECTOR DE OBJETOS con Haar Cascade\neg.lst
+numPos: 6
+numNeg: 19
+numStages: 20
+precalcValBufSize[Mb] : 1024
+precalcIdxBufSize[Mb] : 1024
+
+acceptanceRatioBreakValue : -1
+stageType: BOOST
+featureType: HAAR
+sampleWidth: 38
+sampleHeight: 46
+boostType: GAB
+minHitRate: 0.995
+maxFalseAlarmRate: 0.5
+weightTrimRate: 0.95
+maxDepth: 1
+maxWeakCount: 100
+mode: BASIC
+Number of unique features given windowSize [38,46] : 1481798
+
+===== TRAINING 0-stage =====
+<BEGIN
+
+POS current samples: 1
+POS current samples: 2
+POS current samples: 3
+POS current samples: 4
+POS current samples: 5
+POS current samples: 6
+POS count : consumed   6 : 6
+
+NEG current samples: 1
+NEG current samples: 2
+NEG current samples: 3
+NEG current samples: 4
+NEG current samples: 5
+NEG current samples: 6
+NEG current samples: 7
+NEG current samples: 8
+NEG current samples: 9
+NEG current samples: 10
+NEG current samples: 11
+NEG current samples: 12
+NEG current samples: 13
+NEG current samples: 14
+NEG current samples: 15
+NEG current samples: 16
+NEG current samples: 17
+NEG current samples: 18
+NEG current samples: 19
+NEG count : acceptanceRatio    19 : 1
+
+Precalculation time: 1.488
+
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+
+|   1|        1|        0|
++----+---------+---------+
+
+END>
+
+Training until now has taken 0 days 0 hours 0 minutes 2 seconds.
+
+
+===== TRAINING 1-stage =====
+<BEGIN
+
+POS current samples: 1
+POS current samples: 2
+POS current samples: 3
+POS current samples: 4
+POS current samples: 5
+POS current samples: 6
+POS count : consumed   6 : 6
+
+NEG count : acceptanceRatio    0 : 0
+Required leaf false alarm rate achieved. Branch training terminated.
